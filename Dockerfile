@@ -2,7 +2,7 @@ FROM maven:3.8-jdk-11 AS build
 
 WORKDIR /project
 
-COPY ./javaapp/ /project
+COPY ./ecr-image/javaapp/ /project
 
 RUN mvn clean package
 
