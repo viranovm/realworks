@@ -6,7 +6,7 @@ inputs:
   path:
     description: Path to the Terraform configuration
     required: false
-    default: .
+    default: ../../
   workspace:
     description: Name of the Terraform workspace
     required: false
