@@ -37,5 +37,5 @@
             ECR_REPOSITORY: ${{ secrets.REPO_NAME }}
             IMAGE_TAG: ${{ steps.get-commit-hash.outputs.commit-hash }}-${{ steps.get-timestamp.outputs.timestamp }}
           run: |
-            docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-            docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+            docker build -t public.ecr.aws/g1v5s6t8/realworks-repo:$IMAGE_TAG .
+            docker push public.ecr.aws/g1v5s6t8/realworks-repo:$IMAGE_TAG
